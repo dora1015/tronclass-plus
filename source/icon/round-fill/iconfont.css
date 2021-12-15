@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont.ttf?t=1639563393959') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-text:before {
+  content: "\e769";
+}
+
+.icon-search:before {
+  content: "\e76a";
+}
+
+.icon-stars:before {
+  content: "\e76b";
+}
+
+.icon-safe:before {
+  content: "\e76c";
+}
+
+.icon-wallet:before {
+  content: "\e76d";
+}
+
+.icon-picture:before {
+  content: "\e76e";
+}
+
+.icon-plus:before {
+  content: "\e76f";
+}
+
+.icon-order:before {
+  content: "\e770";
+}
+
+.icon-notice:before {
+  content: "\e771";
+}
+
+.icon-package:before {
+  content: "\e772";
+}
+
+.icon-love:before {
+  content: "\e773";
+}
+
+.icon-home:before {
+  content: "\e774";
+}
+
+.icon-message:before {
+  content: "\e775";
+}
+
+.icon-house:before {
+  content: "\e776";
+}
+
+.icon-folder:before {
+  content: "\e777";
+}
+
+.icon-eyes:before {
+  content: "\e778";
+}
+
+.icon-my:before {
+  content: "\e779";
+}
+
+.icon-egg:before {
+  content: "\e77a";
+}
+
+.icon-computer:before {
+  content: "\e77b";
+}
+
+.icon-camera:before {
+  content: "\e77c";
+}
+
+.icon-diamonds:before {
+  content: "\e77d";
+}
+
+.icon-card:before {
+  content: "\e77e";
+}
+
+.icon-compass:before {
+  content: "\e77f";
+}
+
+.icon-calendar:before {
+  content: "\e780";
+}
+

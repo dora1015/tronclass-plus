@@ -1,0 +1,177 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "19271643",
+      "name": "text",
+      "font_class": "text",
+      "unicode": "e769",
+      "unicode_decimal": 59241
+    },
+    {
+      "icon_id": "19271644",
+      "name": "search",
+      "font_class": "search",
+      "unicode": "e76a",
+      "unicode_decimal": 59242
+    },
+    {
+      "icon_id": "19271645",
+      "name": "stars",
+      "font_class": "stars",
+      "unicode": "e76b",
+      "unicode_decimal": 59243
+    },
+    {
+      "icon_id": "19271646",
+      "name": "safe",
+      "font_class": "safe",
+      "unicode": "e76c",
+      "unicode_decimal": 59244
+    },
+    {
+      "icon_id": "19271647",
+      "name": "wallet",
+      "font_class": "wallet",
+      "unicode": "e76d",
+      "unicode_decimal": 59245
+    },
+    {
+      "icon_id": "19271648",
+      "name": "picture",
+      "font_class": "picture",
+      "unicode": "e76e",
+      "unicode_decimal": 59246
+    },
+    {
+      "icon_id": "19271649",
+      "name": "plus",
+      "font_class": "plus",
+      "unicode": "e76f",
+      "unicode_decimal": 59247
+    },
+    {
+      "icon_id": "19271650",
+      "name": "order",
+      "font_class": "order",
+      "unicode": "e770",
+      "unicode_decimal": 59248
+    },
+    {
+      "icon_id": "19271651",
+      "name": "notice",
+      "font_class": "notice",
+      "unicode": "e771",
+      "unicode_decimal": 59249
+    },
+    {
+      "icon_id": "19271652",
+      "name": "package",
+      "font_class": "package",
+      "unicode": "e772",
+      "unicode_decimal": 59250
+    },
+    {
+      "icon_id": "19271653",
+      "name": "love",
+      "font_class": "love",
+      "unicode": "e773",
+      "unicode_decimal": 59251
+    },
+    {
+      "icon_id": "19271654",
+      "name": "home",
+      "font_class": "home",
+      "unicode": "e774",
+      "unicode_decimal": 59252
+    },
+    {
+      "icon_id": "19271655",
+      "name": "message",
+      "font_class": "message",
+      "unicode": "e775",
+      "unicode_decimal": 59253
+    },
+    {
+      "icon_id": "19271656",
+      "name": "house",
+      "font_class": "house",
+      "unicode": "e776",
+      "unicode_decimal": 59254
+    },
+    {
+      "icon_id": "19271657",
+      "name": "folder",
+      "font_class": "folder",
+      "unicode": "e777",
+      "unicode_decimal": 59255
+    },
+    {
+      "icon_id": "19271658",
+      "name": "eyes",
+      "font_class": "eyes",
+      "unicode": "e778",
+      "unicode_decimal": 59256
+    },
+    {
+      "icon_id": "19271659",
+      "name": "my",
+      "font_class": "my",
+      "unicode": "e779",
+      "unicode_decimal": 59257
+    },
+    {
+      "icon_id": "19271660",
+      "name": "egg",
+      "font_class": "egg",
+      "unicode": "e77a",
+      "unicode_decimal": 59258
+    },
+    {
+      "icon_id": "19271661",
+      "name": "computer",
+      "font_class": "computer",
+      "unicode": "e77b",
+      "unicode_decimal": 59259
+    },
+    {
+      "icon_id": "19271662",
+      "name": "camera",
+      "font_class": "camera",
+      "unicode": "e77c",
+      "unicode_decimal": 59260
+    },
+    {
+      "icon_id": "19271663",
+      "name": "diamonds",
+      "font_class": "diamonds",
+      "unicode": "e77d",
+      "unicode_decimal": 59261
+    },
+    {
+      "icon_id": "19271664",
+      "name": "card",
+      "font_class": "card",
+      "unicode": "e77e",
+      "unicode_decimal": 59262
+    },
+    {
+      "icon_id": "19271665",
+      "name": "compass",
+      "font_class": "compass",
+      "unicode": "e77f",
+      "unicode_decimal": 59263
+    },
+    {
+      "icon_id": "19271666",
+      "name": "calendar",
+      "font_class": "calendar",
+      "unicode": "e780",
+      "unicode_decimal": 59264
+    }
+  ]
+}

@@ -1,0 +1,345 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "26212094",
+      "name": "Basket_2",
+      "font_class": "Basket_2",
+      "unicode": "e668",
+      "unicode_decimal": 58984
+    },
+    {
+      "icon_id": "26212095",
+      "name": "Back_2",
+      "font_class": "Back_2",
+      "unicode": "e669",
+      "unicode_decimal": 58985
+    },
+    {
+      "icon_id": "26212096",
+      "name": "A_shout",
+      "font_class": "A_shout",
+      "unicode": "e66a",
+      "unicode_decimal": 58986
+    },
+    {
+      "icon_id": "26212097",
+      "name": "Back",
+      "font_class": "Back",
+      "unicode": "e66b",
+      "unicode_decimal": 58987
+    },
+    {
+      "icon_id": "26212098",
+      "name": "Avatar",
+      "font_class": "Avatar",
+      "unicode": "e66c",
+      "unicode_decimal": 58988
+    },
+    {
+      "icon_id": "26212099",
+      "name": "Close",
+      "font_class": "Close",
+      "unicode": "e66d",
+      "unicode_decimal": 58989
+    },
+    {
+      "icon_id": "26212100",
+      "name": "Comment",
+      "font_class": "Comment",
+      "unicode": "e66e",
+      "unicode_decimal": 58990
+    },
+    {
+      "icon_id": "26212101",
+      "name": "Cloud",
+      "font_class": "Cloud",
+      "unicode": "e66f",
+      "unicode_decimal": 58991
+    },
+    {
+      "icon_id": "26212102",
+      "name": "Delivery",
+      "font_class": "Delivery",
+      "unicode": "e670",
+      "unicode_decimal": 58992
+    },
+    {
+      "icon_id": "26212103",
+      "name": "Address",
+      "font_class": "Address",
+      "unicode": "e671",
+      "unicode_decimal": 58993
+    },
+    {
+      "icon_id": "26212104",
+      "name": "Camera",
+      "font_class": "Camera",
+      "unicode": "e672",
+      "unicode_decimal": 58994
+    },
+    {
+      "icon_id": "26212105",
+      "name": "Download",
+      "font_class": "Download",
+      "unicode": "e673",
+      "unicode_decimal": 58995
+    },
+    {
+      "icon_id": "26212106",
+      "name": "Folder",
+      "font_class": "Folder",
+      "unicode": "e674",
+      "unicode_decimal": 58996
+    },
+    {
+      "icon_id": "26212107",
+      "name": "Basket",
+      "font_class": "Basket",
+      "unicode": "e675",
+      "unicode_decimal": 58997
+    },
+    {
+      "icon_id": "26212108",
+      "name": "Enable",
+      "font_class": "Enable",
+      "unicode": "e676",
+      "unicode_decimal": 58998
+    },
+    {
+      "icon_id": "26212109",
+      "name": "Bell",
+      "font_class": "Bell",
+      "unicode": "e677",
+      "unicode_decimal": 58999
+    },
+    {
+      "icon_id": "26212110",
+      "name": "Phone_2",
+      "font_class": "Phone_2",
+      "unicode": "e678",
+      "unicode_decimal": 59000
+    },
+    {
+      "icon_id": "26212111",
+      "name": "Box",
+      "font_class": "Box",
+      "unicode": "e679",
+      "unicode_decimal": 59001
+    },
+    {
+      "icon_id": "26212112",
+      "name": "Clock",
+      "font_class": "Clock",
+      "unicode": "e67a",
+      "unicode_decimal": 59002
+    },
+    {
+      "icon_id": "26212113",
+      "name": "Menu",
+      "font_class": "Menu",
+      "unicode": "e67b",
+      "unicode_decimal": 59003
+    },
+    {
+      "icon_id": "26212114",
+      "name": "Dislike",
+      "font_class": "Dislike",
+      "unicode": "e67c",
+      "unicode_decimal": 59004
+    },
+    {
+      "icon_id": "26212115",
+      "name": "Heart",
+      "font_class": "Heart",
+      "unicode": "e67d",
+      "unicode_decimal": 59005
+    },
+    {
+      "icon_id": "26212116",
+      "name": "Flag",
+      "font_class": "Flag",
+      "unicode": "e67e",
+      "unicode_decimal": 59006
+    },
+    {
+      "icon_id": "26212117",
+      "name": "ëalendar",
+      "font_class": "a-ealendar",
+      "unicode": "e67f",
+      "unicode_decimal": 59007
+    },
+    {
+      "icon_id": "26212118",
+      "name": "Phone",
+      "font_class": "Phone",
+      "unicode": "e680",
+      "unicode_decimal": 59008
+    },
+    {
+      "icon_id": "26212119",
+      "name": "Search",
+      "font_class": "Search",
+      "unicode": "e681",
+      "unicode_decimal": 59009
+    },
+    {
+      "icon_id": "26212120",
+      "name": "Compare",
+      "font_class": "Compare",
+      "unicode": "e682",
+      "unicode_decimal": 59010
+    },
+    {
+      "icon_id": "26212121",
+      "name": "Forward_2",
+      "font_class": "Forward_2",
+      "unicode": "e683",
+      "unicode_decimal": 59011
+    },
+    {
+      "icon_id": "26212122",
+      "name": "Entry",
+      "font_class": "Entry",
+      "unicode": "e684",
+      "unicode_decimal": 59012
+    },
+    {
+      "icon_id": "26212123",
+      "name": "lock_2",
+      "font_class": "lock_2",
+      "unicode": "e685",
+      "unicode_decimal": 59013
+    },
+    {
+      "icon_id": "26212124",
+      "name": "Filter",
+      "font_class": "Filter",
+      "unicode": "e686",
+      "unicode_decimal": 59014
+    },
+    {
+      "icon_id": "26212125",
+      "name": "Update",
+      "font_class": "Update",
+      "unicode": "e687",
+      "unicode_decimal": 59015
+    },
+    {
+      "icon_id": "26212126",
+      "name": "Forward",
+      "font_class": "Forward",
+      "unicode": "e688",
+      "unicode_decimal": 59016
+    },
+    {
+      "icon_id": "26212127",
+      "name": "Garbage",
+      "font_class": "Garbage",
+      "unicode": "e689",
+      "unicode_decimal": 59017
+    },
+    {
+      "icon_id": "26212128",
+      "name": "Cursor",
+      "font_class": "Cursor",
+      "unicode": "e68a",
+      "unicode_decimal": 59018
+    },
+    {
+      "icon_id": "26212129",
+      "name": "Printer",
+      "font_class": "Printer",
+      "unicode": "e68b",
+      "unicode_decimal": 59019
+    },
+    {
+      "icon_id": "26212130",
+      "name": "Like",
+      "font_class": "Like",
+      "unicode": "e68c",
+      "unicode_decimal": 59020
+    },
+    {
+      "icon_id": "26212131",
+      "name": "lock",
+      "font_class": "lock",
+      "unicode": "e68d",
+      "unicode_decimal": 59021
+    },
+    {
+      "icon_id": "26212132",
+      "name": "Write",
+      "font_class": "Write",
+      "unicode": "e68e",
+      "unicode_decimal": 59022
+    },
+    {
+      "icon_id": "26212133",
+      "name": "Dollar",
+      "font_class": "Dollar",
+      "unicode": "e68f",
+      "unicode_decimal": 59023
+    },
+    {
+      "icon_id": "26212134",
+      "name": "Plus",
+      "font_class": "Plus",
+      "unicode": "e690",
+      "unicode_decimal": 59024
+    },
+    {
+      "icon_id": "26212135",
+      "name": "Settings",
+      "font_class": "Settings",
+      "unicode": "e691",
+      "unicode_decimal": 59025
+    },
+    {
+      "icon_id": "26212136",
+      "name": "Sharing",
+      "font_class": "Sharing",
+      "unicode": "e692",
+      "unicode_decimal": 59026
+    },
+    {
+      "icon_id": "26212137",
+      "name": "The_envelope",
+      "font_class": "The_envelope",
+      "unicode": "e693",
+      "unicode_decimal": 59027
+    },
+    {
+      "icon_id": "26212138",
+      "name": "Purse",
+      "font_class": "Purse",
+      "unicode": "e694",
+      "unicode_decimal": 59028
+    },
+    {
+      "icon_id": "26212139",
+      "name": "Option",
+      "font_class": "Option",
+      "unicode": "e695",
+      "unicode_decimal": 59029
+    },
+    {
+      "icon_id": "26212140",
+      "name": "Ways_of_payment",
+      "font_class": "Ways_of_payment",
+      "unicode": "e696",
+      "unicode_decimal": 59030
+    },
+    {
+      "icon_id": "26212141",
+      "name": "Page",
+      "font_class": "Page",
+      "unicode": "e697",
+      "unicode_decimal": 59031
+    }
+  ]
+}
