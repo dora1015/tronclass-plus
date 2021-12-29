@@ -119,7 +119,12 @@ class _MineDBState extends State<MineDB> {
       // centerTitle: true,
       body: Container(
         alignment: Alignment.center,
-        color: Colors.teal,
+        // color: Colors.teal[300],
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/images/no-file.jpg")
+          )
+        ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [

@@ -66,6 +66,7 @@ flutter:
     - source/images/
     - assets/images/
     - assets/images/tronclass.png
+    - assets/images/no-file.jpg
     - source/icon/tronclass-logo.ico
     - assets/images/head.jpg
 
