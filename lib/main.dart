@@ -9,6 +9,7 @@ import 'sub_pages/mine.dart';
 import 'sub_pages/mine_about.dart';
 import 'sub_pages/mine_database.dart';
 import 'sub_pages/mine_download.dart';
+import 'sub_pages/mine_help.dart';
 import 'sub_pages/mine_feedback.dart';
 import 'sub_pages/mine_settings.dart';
 import 'main_page.dart';
@@ -37,7 +38,7 @@ void main() {
         return const MineFeedback();
       },
       '/mine/help': (context) {
-        return const MineFeedback();
+        return const MineHelp();
       },
       '/mine/settings': (context) {
         return const MineSettings();
