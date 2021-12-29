@@ -15,7 +15,7 @@ import 'main_page.dart';
 
 void main() {
   runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
+    debugShowCheckedModeBanner: true,
     initialRoute: '/',
     routes: {
       '/': (context) {
@@ -122,8 +122,10 @@ class _MyAppState extends State<MyApp> {
               child: GestureDetector(
                 onTap: (){
                   setState(() {
-                    Navigator.of(context).pushNamed('/main');
+                    // Navigator.of(context).pushNamed('/main');
+                    _countdown = 0;
                   });
+
                 },
                 child: Container(
                   margin: const EdgeInsets.all(5.0),
