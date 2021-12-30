@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tronclass_plus/search_bar.dart';
-
+import 'package:tronclass_plus/mysql.dart';
 
 
 class MineDB extends StatefulWidget {
@@ -52,7 +52,7 @@ class _MineDBState extends State<MineDB> {
                 ],
               ),
             ),
-            Divider(height: 1.0),
+            const Divider(height: 1.0),
             Expanded(
               child: ListView.builder(
                 itemBuilder: (BuildContext context, int index) {
@@ -93,6 +93,7 @@ class _MineDBState extends State<MineDB> {
     ];
     var _screenSize = MediaQuery.of(context).size;
 
+    // sql();
     return Scaffold(
       appBar: AppBar(
           backgroundColor: Colors.white,
@@ -108,7 +109,8 @@ class _MineDBState extends State<MineDB> {
           child: const Icon(Icons.arrow_back_ios_rounded,color: Colors.black,),
           onTap: () {
 
-            Navigator.pushNamed(context, '/mine');
+            // Navigator.pushNamed(context, '/mine');
+            Navigator.pop(context);
           },
           // color: Colors.black,
         ),
@@ -121,9 +123,10 @@ class _MineDBState extends State<MineDB> {
         alignment: Alignment.center,
         // color: Colors.teal[300],
         decoration: const BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage("assets/images/no-file.jpg")
-          )
+          color: Color(0x00ffffff),
+            image: DecorationImage(
+                image: AssetImage("assets/images/no-file.jpg")
+            )
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,

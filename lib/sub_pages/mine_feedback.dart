@@ -35,7 +35,8 @@ class _MineFeedbackState extends State<MineFeedback> {
             color: Colors.black,
           ),
           onTap: () {
-            Navigator.pushNamed(context, '/mine');
+            // Navigator.pushNamed(context, '/mine');
+            Navigator.pop(context);
           },
           // color: Colors.black,
         ),

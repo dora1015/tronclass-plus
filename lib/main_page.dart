@@ -9,7 +9,9 @@ class MainPage extends StatefulWidget {
   State<MainPage> createState() => _MainPageState();
 }
 
+
 class _MainPageState extends State<MainPage> {
+
   int _currentIndex = 0;
 
   List tabs = [
@@ -32,13 +34,9 @@ class _MainPageState extends State<MainPage> {
 
   var pages;
 
-  initData() {
-    pages = [Home(Colors.black, '1'), Home(Colors.white70 , '2'),Home(Colors.teal , '3'),Home(Colors.amber, '4'),const PageMine()];
-  }
-
   @override
   Widget build(BuildContext context) {
-    initData();
+    pages = [Home(Colors.black, '1'), Home(Colors.white70 , '2'),Home(Colors.teal , '3'),Home(Colors.amber, '4'),const PageMine()];
     return Scaffold(
         body: pages[_currentIndex],
         bottomNavigationBar: BottomNavigationBar(
@@ -61,6 +59,7 @@ class _MainPageState extends State<MainPage> {
                 icon: const Icon(IconData(0xe779, fontFamily: 'AppIconsRound')),
                 title: Text(tabs[4]['key'])),
           ],
+
 
           type: BottomNavigationBarType.fixed,
           iconSize: 24,

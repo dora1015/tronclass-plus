@@ -14,37 +14,42 @@ import 'sub_pages/mine_feedback.dart';
 import 'sub_pages/mine_settings.dart';
 import 'main_page.dart';
 
+import 'package:shared_preferences/shared_preferences.dart';
+
+
+
 void main() {
+
   runApp(MaterialApp(
     debugShowCheckedModeBanner: true,
     initialRoute: '/',
     routes: {
       '/': (context) {
-        return const MyApp();
+        return MyApp();
       },
       '/main': (context) {
         return MainPage();
       },
       '/mine': (context) {
-        return const PageMine();
+        return PageMine();
       },
       '/mine/database': (context) {
-        return const MineDB();
+        return MineDB();
       },
       '/mine/download': (context) {
-        return const MineDownload();
+        return MineDownload();
       },
       '/mine/feedback': (context) {
-        return const MineFeedback();
+        return MineFeedback();
       },
       '/mine/help': (context) {
-        return const MineHelp();
+        return MineHelp();
       },
       '/mine/settings': (context) {
-        return const MineSettings();
+        return MineSettings();
       },
       '/mine/about': (context) {
-        return const MineAbout();
+        return MineAbout();
       },
 
       // 'Card01':(context){return const card_01();},
@@ -59,6 +64,13 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  _setDefaultData() async {
+    final SharedPreferences pref = await SharedPreferences.getInstance();
+    pref.setString('userName', "張三");
+    pref.setString('userNo', "s08350000@thu.edu.tw");
+    print("insert data ~");
+  }
+
   final String launchImage =
       "assets/images/tronclass.png";
 
@@ -69,6 +81,7 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     super.initState();
     _startRecordTime();
+    _setDefaultData();
     print('initialize');
   }
 
