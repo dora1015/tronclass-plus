@@ -13,6 +13,25 @@ class PageFront extends StatefulWidget {
 class _PageFrontState extends State<PageFront> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+        backgroundColor: Colors.grey[850],
+      body:Container(
+        padding: EdgeInsets.all(10.0),
+        child:Column(
+          children: [
+            Container(
+              child: Text(
+                'cool'
+              ),
+            ),Container(
+              child: Text(
+                  'cool'
+              ),
+            )
+          ],
+        )
+
+      )
+    );
   }
 }
