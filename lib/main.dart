@@ -66,8 +66,15 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   _setDefaultData() async {
     final SharedPreferences pref = await SharedPreferences.getInstance();
+    // 设置账户
     pref.setString('userName', "張三");
     pref.setString('userNo', "s08350000@thu.edu.tw");
+    // 默认配置
+    pref.setString('perform', "system");
+    pref.setString('language', "system");
+    pref.setString('fontSize', "standard");
+    // pref.setString('motivation', "system");
+
     print("insert data ~");
   }
 
