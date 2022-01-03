@@ -12,11 +12,8 @@ import 'sub_pages/mine_download.dart';
 import 'sub_pages/mine_help.dart';
 import 'sub_pages/mine_feedback.dart';
 import 'sub_pages/mine_settings.dart';
-import 'main_page.dart';
 
-import 'package:shared_preferences/shared_preferences.dart';
-
-
+import 'config.dart';
 
 void main() {
 
@@ -64,31 +61,18 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  _setDefaultData() async {
-    final SharedPreferences pref = await SharedPreferences.getInstance();
-    // 设置账户
-    pref.setString('userName', "張三");
-    pref.setString('userNo', "s08350000@thu.edu.tw");
-    // 默认配置
-    pref.setString('perform', "system");
-    pref.setString('language', "system");
-    pref.setString('fontSize', "standard");
-    // pref.setString('motivation', "system");
-
-    print("insert data ~");
-  }
 
   final String launchImage =
       "assets/images/tronclass.png";
 
-  int _countdown = 3;
+  int _countdown = skipTime_;
   late Timer _countdownTimer;
 
   @override
   void initState() {
     super.initState();
     _startRecordTime();
-    _setDefaultData();
+    // _setDefaultData();
     print('initialize');
   }
 

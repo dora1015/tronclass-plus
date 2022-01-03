@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
+import 'config.dart';
 
 class TimeTable extends StatefulWidget {
   @override
@@ -9,48 +9,9 @@ class TimeTable extends StatefulWidget {
 
 class _TimeTableState extends State<TimeTable> {
 
-  var coursesList = {
-    //title :  position, teacher,  color,
-    "线性代数":["黄老师", Color(0xff0f95b0)],
-    "资料库":["吕老师", Color(0xff21373d)],
-    "计算机网络":["江老师", Color(0xff3b818c)],
-    "软体专案管理":["江老师", Color(0xff63bbd0)],
-    "行动装置":["朱老师", Color(0xff1491a8)],
-    "大数据分析":["焦老师", Color(0xff29b7cb)],
-    "演算法":["黄老师", Color(0xff29b7cb)],
-    "物联网与感测":["赖老师", Color(0xff7cabb1)],
-
-  };
-  var tableList = {
-    1:{
-      "线性代数":[2,3,4],
-      "资料库":[8],
-    },
-    2:{
-      "计算机网络":[2,3,4],
-      "资料库":[6,7],
-    },
-    3:{
-      "软体专案管理":[2,3,4],
-      "行动装置":[8,9,10],
-    },
-    4:{
-      "大数据分析":[2,3,4],
-      "演算法":[6,7,8],
-    },
-    5:{
-      "物联网与感测":[6,7,8],
-    },
-    6:{
-
-    },
-    7:{
-
-    },
-  };
-
+  var coursesList = couseList_;
+  var tableList = tableList_;
   var weekList = ['Mon', 'Tue', 'Thu', 'Wed', 'Fri', 'Sat', 'Sun'];
-
   var dateList = [];
   var currentWeekIndex = 0;
 
@@ -87,10 +48,13 @@ class _TimeTableState extends State<TimeTable> {
     return Scaffold(
         body: Container(
           decoration: const BoxDecoration(
-              gradient: LinearGradient(colors: [
-                Color.fromRGBO(32, 170, 210, 1),
-                Color.fromRGBO(18, 195, 180, 1),
-              ])),
+              // gradient: LinearGradient(colors: [
+              //   Color.fromRGBO(32, 170, 210, 1),
+              //   Color.fromRGBO(18, 195, 180, 1),
+              // ])
+            color: Colors.white,
+
+          ),
       // color: Colors.teal,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
@@ -186,7 +150,7 @@ class _TimeTableState extends State<TimeTable> {
                               ));
                         }),
                   ),
-                  
+
                   Expanded(
                     flex: 7,
                     child: GridView.builder(

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tronclass_plus/main.dart';
 
-import 'package:shared_preferences/shared_preferences.dart';
+import 'package:tronclass_plus/config.dart';
 
 class PageMine extends StatefulWidget {
   const PageMine({Key? key}) : super(key: key);
@@ -10,38 +10,11 @@ class PageMine extends StatefulWidget {
   State<PageMine> createState() => _PageMineState();
 }
 
-Future<String> getData(var key) async {
-  var info;
-  SharedPreferences prefs = await SharedPreferences.getInstance();
-  try {
-    info = prefs.getString(key);
-  }catch (e){
-    print(e);
-  }
-  return info ?? "";
-}
-
-
-
 class _PageMineState extends State<PageMine> {
 
-  String stu_name = '';
-  String stu_no = '';
+  String stu_name = userName_;
+  String stu_no = userNo_;
   @override
-  void initState() {
-    super.initState();
-    getData('userName').then((value) {
-      setState(() {
-        stu_name = value;
-      });
-    });
-
-    getData('userNo').then((value) {
-      setState(() {
-        stu_no = value;
-      });
-    });
-  }
 
 
   @override
