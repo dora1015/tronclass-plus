@@ -7,6 +7,7 @@ class TimeTable extends StatefulWidget {
   State<StatefulWidget> createState() => _TimeTableState();
 }
 
+var flag = false;
 class _TimeTableState extends State<TimeTable> {
 
   var coursesList = couseList_;
@@ -14,6 +15,7 @@ class _TimeTableState extends State<TimeTable> {
   var weekList = ['Mon', 'Tue', 'Thu', 'Wed', 'Fri', 'Sat', 'Sun'];
   var dateList = [];
   var currentWeekIndex = 0;
+
 
   @override
   void initState() {
@@ -45,6 +47,8 @@ class _TimeTableState extends State<TimeTable> {
 
   @override
   Widget build(BuildContext context) {
+
+    // var table = drawTable(tableList);
     return Scaffold(
         body: Container(
           decoration: const BoxDecoration(
@@ -153,47 +157,8 @@ class _TimeTableState extends State<TimeTable> {
 
                   Expanded(
                     flex: 7,
-                    child: GridView.builder(
-                        shrinkWrap: true,
-                        physics: const NeverScrollableScrollPhysics(),
-                        itemCount: 70,
-                        gridDelegate:
-                            const SliverGridDelegateWithFixedCrossAxisCount(
-                                crossAxisCount: 7, childAspectRatio: 1 / 2),
-                        itemBuilder: (BuildContext context, int index) {
-                          return Container(
-                            child: Stack(
-                              children: [
-                                Column(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Flexible(
-                                      flex: 1,
-                                      child: Container(
-                                          width: double.infinity,
-                                          height: double.infinity,
-                                          decoration: const BoxDecoration(
-                                            color: Colors.white,
-                                            // border: Border.all(color: Colors.black12, width: 0.5),
-                                            border: Border(
-                                              bottom: BorderSide(
-                                                  color: Color.fromRGBO(32, 170, 210, 1),
-                                                  width: 0.5),
-                                              right: BorderSide(
-                                                  color: Color.fromRGBO(18, 195, 180, 1),
-                                                  width: 0.5),
-                                            ),
-                                          )),
-                                    ),
-
-                                  ],
-                                ),
-                                //===================================================
-                                DrawCourses(index),
-                              ],
-                            ),
-                          );
-                        }),
+//============================顯示table========================
+                    child: drawTable(tableList),
                   )
                 ],
               ),
@@ -202,10 +167,74 @@ class _TimeTableState extends State<TimeTable> {
           // _bottomView
         ],
       ),
-    ));
+    ),
+      floatingActionButton: FloatingActionButton(
+        child: const Icon(Icons.compare),
+        onPressed: (){
+          setState(() {
+            print('Compare');
+            if (flag) {
+              tableList = {};
+
+            }else{
+              tableList = tableList_;
+            }
+            flag = !flag;
+          });
+        },
+      ),
+
+    );
   }
 
-  DrawCourses(index) {
+
+//  依據提供的table繪製課表
+  Widget drawTable(var table) {
+
+
+    return GridView.builder(
+        shrinkWrap: true,
+        physics: const NeverScrollableScrollPhysics(),
+        itemCount: 70,
+        gridDelegate:
+        const SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 7, childAspectRatio: 1 / 2),
+        itemBuilder: (BuildContext context, int index) {
+          return Stack(
+            children: [
+              Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Flexible(
+                    flex: 1,
+                    child: Container(
+                        width: double.infinity,
+                        height: double.infinity,
+                        decoration: const BoxDecoration(
+                          color: Colors.white,
+                          // border: Border.all(color: Colors.black12, width: 0.5),
+                          border: Border(
+                            bottom: BorderSide(
+                                color: Color.fromRGBO(32, 170, 210, 1),
+                                width: 0.5),
+                            right: BorderSide(
+                                color: Color.fromRGBO(18, 195, 180, 1),
+                                width: 0.5),
+                          ),
+                        )),
+                  ),
+
+                ],
+              ),
+              //===================================================
+              DrawCourses(table, index),
+            ],
+          );
+        });
+  }
+
+
+  DrawCourses(table, index) {
     var week = index % 7 + 1;
     var courseTime = index ~/ 7 + 1;
     var color = Colors.white;
@@ -216,9 +245,9 @@ class _TimeTableState extends State<TimeTable> {
     var hasFollowCourse = false;
 
 
-    if(tableList[week] != null) {
+    if(table[week] != null) {
       // 遍历当天所有课程
-      tableList[week]!.forEach((key, value) {
+      table[week]!.forEach((key, value) {
         // 如果对应课程的课时资料中含有当前block
         if(value.contains(courseTime)) {
           // 当发现当前的key对应这个block，准备title和color
@@ -256,10 +285,10 @@ class _TimeTableState extends State<TimeTable> {
           ),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.only(
-              topRight: ( hasPreCourse ? Radius.circular(0) : Radius.circular(2)),
-              topLeft: ( hasPreCourse ? Radius.circular(0) : Radius.circular(2)),
-              bottomRight: ( hasFollowCourse ? Radius.circular(0) : Radius.circular(2)),
-              bottomLeft: ( hasFollowCourse ? Radius.circular(0) : Radius.circular(2)),
+              topRight: ( hasPreCourse ? const Radius.circular(0) : const Radius.circular(2)),
+              topLeft: ( hasPreCourse ? const Radius.circular(0) : const Radius.circular(2)),
+              bottomRight: ( hasFollowCourse ? const Radius.circular(0) : const Radius.circular(2)),
+              bottomLeft: ( hasFollowCourse ? const Radius.circular(0) : const Radius.circular(2)),
             ),
             color: color,
           ),
@@ -282,7 +311,7 @@ class _TimeTableState extends State<TimeTable> {
       },
       child: Container(
           height: 99,
-          margin: EdgeInsets.all(0.5),
+          margin: const EdgeInsets.all(0.5),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(2),
             // color: colorList[index % 7],
