@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'sub_pages/mine.dart';
+import 'sub_pages/front.dart';
 
 class MainPage extends StatefulWidget {
 
@@ -36,7 +37,7 @@ class _MainPageState extends State<MainPage> {
 
   @override
   Widget build(BuildContext context) {
-    pages = [Home(Colors.black, '1'), Home(Colors.white70 , '2'),Home(Colors.teal , '3'),Home(Colors.amber, '4'),const PageMine()];
+    pages = [const PageFront(), Home(Colors.white70 , '2'),Home(Colors.teal , '3'),Home(Colors.amber, '4'),const PageMine()];
     return Scaffold(
         body: pages[_currentIndex],
         bottomNavigationBar: BottomNavigationBar(
