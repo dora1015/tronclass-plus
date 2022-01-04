@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tronclass_plus/main.dart';
+import 'package:tronclass_plus/search_bar.dart';
+import 'package:tronclass_plus/config.dart';
 
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -11,31 +13,119 @@ class PageFront extends StatefulWidget {
 }
 
 class _PageFrontState extends State<PageFront> {
+  String stu_name = userName_;
+  String stu_no = userNo_;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.grey[850],
+        backgroundColor: Color.fromRGBO(29,32,37,1),
       body:Container(
-        padding: EdgeInsets.all(10.0),
+        padding: EdgeInsets.all(20.0),
         child:Column(
           children: [
             Container(
               decoration: new BoxDecoration(
                 border: new Border.all(color:Color(0xFFF0000),width: 0.5),
-                color:Color(0xFF9E9E9E),
+                color:Color.fromRGBO(41,44,51,1),
                 borderRadius:new BorderRadius.circular((20.0)),
               ),
-              //alignment: Alignment.topCenter,
-              //color:Colors.grey[800],
               constraints: BoxConstraints(maxHeight: 50),
               child:
                   SearchField(context),
-            ),
+            ), //搜尋欄
+            SizedBox(height: 15,),
             Container(
+              alignment: Alignment.centerLeft,
               child: Text(
-                  'cool'
+                  '哈囉!'+stu_name+'同學',
+                  textAlign: TextAlign.left,
+                  style: const TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
               ),
-            )
+            ), //系統招呼
+            SizedBox(height: 20,),
+            Container(
+              height: 100,
+              decoration: new BoxDecoration(
+                border: new Border.all(color:Color(0xFFF0000),width: 0.5),
+                color:Color.fromRGBO(41,44,51,1),
+                borderRadius:new BorderRadius.circular((5.0)),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  FlatButton(
+                    minWidth: 200,
+                    height: 70,
+                    child: Text('掃描',style: TextStyle(fontWeight: FontWeight.bold),),
+                    color: Colors.blue,
+                    splashColor: Colors.red,
+                    textColor: Colors.white,
+                    onPressed: () {},
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                  ),
+                  FlatButton(
+                    minWidth: 200,
+                    height: 70,
+                    child: Text('簽到',style: TextStyle(fontWeight: FontWeight.bold)),
+                    color: Colors.green,
+                    splashColor: Colors.red,
+                    textColor: Colors.white,
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                    onPressed: () {},
+                  ),
+                ],
+              ),
+
+            ), //掃描 簽到按鈕
+            SizedBox(height: 15,),
+            Container(
+              alignment: Alignment.centerLeft,
+              child: Text(
+                '最近造訪',
+                textAlign: TextAlign.left,
+                style: const TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+            ), //最近造訪
+            SizedBox(height: 15,),
+            Container(
+              height: 200,
+              width: double.maxFinite,
+              child:Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    height: 200,
+                    width: 200,
+                    decoration: new BoxDecoration(
+                      border: new Border.all(color:Color(0xFFF0000),width: 0.5),
+                      color:Color.fromRGBO(41,44,51,1),
+                      borderRadius:new BorderRadius.circular((5.0)),
+                    ),
+
+                  ),
+
+                  Container(
+                    height: 200,
+                    width: 200,
+                    decoration: new BoxDecoration(
+                      border: new Border.all(color:Color(0xFFF0000),width: 0.5),
+                      color:Color.fromRGBO(41,44,51,1),
+                      borderRadius:new BorderRadius.circular((5.0)),
+                    ),
+
+                  ),
+                ],
+              )
+            ),
           ],
         )
 
@@ -44,6 +134,21 @@ class _PageFrontState extends State<PageFront> {
   }
 }
 Widget SearchField(context){
+  void searchDialog(context, value) {
+    showDialog(
+        context: context,
+        builder: (_) => AlertDialog(
+            title: Text("搜尋 $value"),
+            content: Text("無搜尋結果"),
+            actions: [
+              FlatButton(
+                child: Text("重新搜尋"),
+                onPressed: () => Navigator.of(context).pop(),
+              )
+            ]
+        )
+    );
+  }
     return TextField(
         decoration: InputDecoration(
           labelText: '輸入課程名稱或訪問碼',
@@ -53,18 +158,9 @@ Widget SearchField(context){
         onSubmitted: (value) => searchDialog(context, value)
     );
 }
-void searchDialog(context, value) {
-  showDialog(
-      context: context,
-      builder: (_) => AlertDialog(
-          title: Text("搜尋 $value"),
-          content: Text("無搜尋結果"),
-          actions: [
-            FlatButton(
-              child: Text("重新搜尋"),
-              onPressed: () => Navigator.of(context).pop(),
-            )
-          ]
-      )
-  );
+Scan(){
+  return null;
+}
+checkin(){
+  return null;
 }
