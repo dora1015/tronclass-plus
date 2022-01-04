@@ -47,7 +47,7 @@ class _PageFrontState extends State<PageFront> {
                   ),
               ),
             ), //系統招呼
-            SizedBox(height: 20,),
+            SizedBox(height: 15,),
             Container(
               height: 100,
               decoration: new BoxDecoration(
@@ -110,9 +110,29 @@ class _PageFrontState extends State<PageFront> {
                       color:Color.fromRGBO(41,44,51,1),
                       borderRadius:new BorderRadius.circular((5.0)),
                     ),
-
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 100,
+                          width: 200,
+                          child: Image(image:AssetImage('assets/images/lenny.png'),
+                          ),
+                        ),
+                        Container(
+                          height: 95,
+                          width: 200,
+                          child: Text(
+                            '(1101_1025)線性代數\n\n\n'+'開課系級:資訊工程系',
+                            textAlign: TextAlign.left,
+                            style: const TextStyle(
+                              fontSize: 16,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
-
                   Container(
                     height: 200,
                     width: 200,
@@ -121,11 +141,85 @@ class _PageFrontState extends State<PageFront> {
                       color:Color.fromRGBO(41,44,51,1),
                       borderRadius:new BorderRadius.circular((5.0)),
                     ),
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 100,
+                          width: 200,
+                          child: Image(image:AssetImage('assets/images/lenny.png'),
+                          ),
+                        ),
+                        Container(
+                          height: 95,
+                          width: 200,
+                          child: Text(
+                            '(1101_1042)大數據分析\n\n\n'+'開課系級:資訊工程系',
+                            textAlign: TextAlign.left,
+                            style: const TextStyle(
+                              fontSize: 16,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
 
                   ),
                 ],
               )
-            ),
+            ), //最近造訪 課程捷徑
+            SizedBox(height: 15,),
+            Container(
+              alignment: Alignment.centerLeft,
+              child: Text(
+                '待辦事項',
+                textAlign: TextAlign.left,
+                style: const TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+            ), //待辦事項
+            Container(
+              height: 100,
+              width: double.maxFinite,
+              decoration: new BoxDecoration(
+                border: new Border.all(color:Color(0xFFF0000),width: 0.5),
+                color:Color.fromRGBO(41,44,51,1),
+                borderRadius:new BorderRadius.circular((5.0)),
+              ),
+              child: Column(
+                children: [
+                  Container(
+                    alignment: Alignment.centerLeft,
+                    height: 50,
+                    child: Text(
+                      '期末專題上傳資料繳交處\n'+'課程名稱:(1101_1042)大數據分析',
+                      textAlign: TextAlign.left,
+                      style: const TextStyle(
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    alignment: Alignment.centerLeft,
+                    height: 49,
+                    child: Text(
+                      '截止日期\n'+'2022-01-21 18:38',
+                      textAlign: TextAlign.left,
+                      style: const TextStyle(
+                        fontSize: 10,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            )
           ],
         )
 
