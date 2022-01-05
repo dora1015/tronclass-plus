@@ -18,6 +18,17 @@ class _Page2State extends State<Page2> {
           '公告',
           style: TextStyle(color: Colors.black),
         ),
+        leading: GestureDetector(
+          child: const Icon(
+            Icons.arrow_back_ios_rounded,
+            color: Colors.black,
+          ),
+          onTap: () {
+            // Navigator.pushNamed(context, '/mine');
+            Navigator.pop(context);
+          },
+          // color: Colors.black,
+        ),
       ),
       body: Container(
         color: Colors.white,
